@@ -1,4 +1,13 @@
 {
   "file": "./models/stations.json",
-  "stations": []
+  "stations": [
+    {
+      "name": "Ennis",
+      "_id": "f1816d69-f0ea-4479-9ae9-cae414fcfda0"
+    },
+    {
+      "name": "Shannon",
+      "_id": "1827186d-3652-4215-acea-4f05a56d3e55"
+    }
+  ]
 }

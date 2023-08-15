@@ -3,7 +3,7 @@ import { initStore } from "../utils/store-utils.js";
 
 const db = initStore("stations");
 
-export const stationsStore = {
+export const stationStore = {
   async getAllStations() {
     await db.read();
     return db.data.stations;
@@ -12,7 +12,7 @@ export const stationsStore = {
   async addStation(station) {
     await db.read();
     station._id = v4();
-    db.data.station.push(station);
+    db.data.stations.push(station);
     await db.write();
     return station;
   },
