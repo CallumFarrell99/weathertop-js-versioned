@@ -1,9 +1,26 @@
 {{> menu}}
 
-<section class="section">
-    <div class="title">
-        {{station.name}}
+<section class="content box">
+  <div class="columns">
+    <div class="column is-half">
+      <div class="content box notification is-dark">
+        <div class="columns">
+          <div class="column">
+            <p class="subtitle">
+              {{station.name}}
+            </p>
+            <p>Lng: </p>
+            <p>Lat: </p>
+          </div>
+          <div class="column">
+            <span class="icon is-large">
+              <i class=""></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      {{> latest-readings}}
     </div>
-    {{>list-readings}}
+    {{> list-readings}}
     {{> add-reading}}
 </section>

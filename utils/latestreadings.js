@@ -5,8 +5,8 @@ export const latestReadings= async (id) => {
     let stationReadings = await readingStore.getReadingsByStationId(id);
     let latestReading = null;
     const reading = {
-        latestCode: null,
-        latestCodeIcon: null,
+        latestConditions: null,
+        conditionsIcon: null,
         latestTemp: null,
         latestTempFahrenheit: null,
         minTemp: null,
@@ -24,8 +24,8 @@ export const latestReadings= async (id) => {
 
     if (stationReadings.length > 0) {
         latestReading = stationReadings.length - 1;
-        reading.latestCode = stationReadings[latestReading].code;
-        reading.latestCodeIcon = conversions.codeIcon(reading.latestCode);
+        reading.latestConditions = conversions.conditions(stationReadings[latestReading].code);
+        reading.conditionsIcon = conversions.conditionsIcon(stationReadings[latestReading].code);
         reading.latestTemp = stationReadings[latestReading].temp;
         reading.latestTempFahrenheit = conversions.celsiusToFahrenheit(reading.latestTemp);
         reading.minTemp = conversions.calculateMin(reading.latestTemp);
@@ -36,7 +36,7 @@ export const latestReadings= async (id) => {
         reading.maxWindSpeed = conversions.calculateMax(reading.latestWindSpeed);
         reading.latestWindDirection = stationReadings[latestReading].windDirection;
         reading.windChill = conversions.windChill(reading.latestWindSpeed, reading.latestTemp);
-        reading.latestPressure = stationReadings[latestreading].pressure;
+        reading.latestPressure = stationReadings[latestReading].pressure;
         reading.minPressure = conversions.calculateMin(reading.latestPressure);
         reading.maxPressure = conversions.calculateMax(reading.latestPressure);
     }

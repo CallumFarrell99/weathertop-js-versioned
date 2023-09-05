@@ -1,0 +1,70 @@
+<div class="columns is-multiline">
+  <div class="column is-half">
+    <div class="content box notification is-dark">
+      <div class="columns">
+        <div class="column">
+          <p class="subtitle">Weather</p>
+          <p>{{latestConditions}}</p>
+        </div>
+        <div class="column">
+          <span class="icon is-large">
+            <i class="{{latestConditionsIcon}}"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="content box notification is-dark">
+      <div class="columns">
+        <div class="column">
+          <p class="subtitle">Temp</p>
+          <p>{{latestTemp}} C</p>
+          <p>{{latestTempFahrenheit}} F</p>
+          <p>Min: {{minTemp}}</p>
+          <p>Max: {{maxTemp}}</p>
+        </div>
+        <div class="column">
+          <span class="icon is-large">
+            <i class=""></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half">
+    <div class="content box notification is-dark">
+      <div class="columns">
+        <div class="column">
+          <p class="subtitle">Wind</p>
+          <p>{{latestWindSpeedBft}} bft</p>
+          <p>{{latestWindDirection}}</p>
+          <p>Feels Like</p>
+          <p>{{windChill}}</p>
+          <p>Min: {{minWindSpeed}}</p>
+          <p>Max: {{maxWindSpeed}}</p>
+        </div>
+        <div class="column">
+          <span class="icon is-large">
+            <i class=""></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-full">
+    <div class="content box notification is-dark">
+      <div class="columns">
+        <div class="column">
+          <p class="subtitle">Pressure</p>
+          <p>{{latestPressure}} hpa</p>
+          <p>Min: {{minPressure}}</p>
+          <p>Max: {{maxPressure}}</p>
+        </div>
+        <div class="column">
+          <span class="icon is-large">
+            <i class=""></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
