@@ -8,6 +8,23 @@
       "pressure": 300,
       "_id": "6ee2c78c-8108-47f8-b456-0549a2e39c65",
       "stationid": "f1816d69-f0ea-4479-9ae9-cae414fcfda0"
+    },
+    {
+      "code": 200,
+      "temp": 17,
+      "windSpeed": 50,
+      "pressure": 400,
+      "_id": "86df66dc-e5ad-41a9-bfe6-269897d5b1d0",
+      "stationid": "bf032241-6681-457b-ac24-3a6567f9279e"
+    },
+    {
+      "code": 200,
+      "temp": 10,
+      "windSpeed": 20,
+      "windDirection": 190,
+      "pressure": 400,
+      "_id": "7a40dc97-a74a-4694-85fe-64a06abf149a",
+      "stationid": "bf032241-6681-457b-ac24-3a6567f9279e"
     }
   ]
 }

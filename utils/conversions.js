@@ -1,11 +1,11 @@
 export const conversions = {
 
-    async celsiusToFahrenheit(celsius) {
+    celsiusToFahrenheit(celsius) {
         let fahrenheit = (celsius * 9 / 5) + 32;
         return Math.round(fahrenheit * 100.0) / 100.0;
     },
 
-    async windSpeedToBeaufort(windSpeed) {
+    windSpeedToBeaufort(windSpeed) {
         let beaufort = 0;
 
         if (windSpeed == 1) {
@@ -36,7 +36,7 @@ export const conversions = {
         return beaufort;
     },
 
-    async conditions(code) {
+    conditions(code) {
         let conditions =null;
 
         if (code == 100) {
@@ -61,7 +61,7 @@ export const conversions = {
         return conditions;
     },
 
-    async conditionsIcon(code) {
+    conditionsIcon(code) {
         let conditionsIcon = null;
 
         if (code == 100) {
@@ -86,7 +86,7 @@ export const conversions = {
         return conditionsIcon;
     },
 
-    async compassDirection(windDirection) {
+    compassDirection(windDirection) {
         let compassDirection = null;
 
         if (windDirection > 11.25 && windDirection <= 33.75) {
@@ -128,7 +128,7 @@ export const conversions = {
           return compassDirection;
     },
 
-    async windChill(windSpeed, temperature) {
+    windChill(windSpeed, temperature) {
         let windChill = 0;
 
         windChill = 13.12 + (0.6215 * temperature) - 11.37 * Math.pow(windSpeed, 0.16) + (0.3965 * temperature);
@@ -136,12 +136,12 @@ export const conversions = {
         return Math.round(windChill * 100.00) / 100.0;
     },
 
-    async calculateMin(reading) {
+    calculateMin(reading) {
         let minimum = reading - (reading * .2);
         return Math.round(minimum * 100.0) / 100.0;
     },
 
-    async calculateMax(reading) {
+    calculateMax(reading) {
         let maximum = reading + (reading * .2);
         return Math.round(maximum * 100.0) / 100.0;
     },
