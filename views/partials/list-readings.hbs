@@ -1,6 +1,7 @@
 <table class="table is-fullwidth">
   <thead>
   <tr>
+    <th>Time Stamp</th>
     <th>Code</th>
     <th>Temp</th>
     <th>Wind Speed</th>
@@ -12,19 +13,22 @@
   {{#each station.readings}}
   <tr>
     <td>
+        {{timeStamp}}
+    </td>
+    <td>
       {{code}}
     </td>
     <td>
-      {{temp}}
+      {{temp}} C
     </td>
     <td>
-      {{windSpeed}}
+      {{windSpeed}} km/h
     </td>
     <td>
-      {{windDirection}}
+      {{windDirection}} deg
     </td>
     <td>
-      {{pressure}}
+      {{pressure}} hpa
     </td>
   </tr>
   {{/each}}

@@ -43,6 +43,74 @@
       "pressure": 350,
       "_id": "c07724c8-e85b-4911-a6ea-931e9e7ff00b",
       "stationid": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
+    },
+    {
+      "code": 100,
+      "temp": 90,
+      "windSpeed": 15,
+      "windDirection": 78,
+      "pressure": 100,
+      "_id": "7bab0001-2898-4220-8a3e-36829f80f7f4",
+      "stationid": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
+    },
+    {
+      "code": 200,
+      "temp": 12,
+      "windSpeed": 68,
+      "windDirection": 35,
+      "pressure": 600,
+      "_id": "7702d649-da5e-4f13-9692-91d3a7db42a1",
+      "stationid": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
+    },
+    {
+      "timeStamp": "2023-09-07T21:30:34.860Z",
+      "code": 200,
+      "temp": 34,
+      "windSpeed": 34,
+      "windDirection": 58,
+      "pressure": 350,
+      "_id": "b457e425-cc7d-4dc5-929c-b2fc18af4349",
+      "stationid": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
+    },
+    {
+      "timeStamp": "2023-09-07T21:38:34.499Z",
+      "code": 500,
+      "temp": 15,
+      "windSpeed": 55,
+      "windDirection": 99,
+      "pressure": 899,
+      "_id": "eac3896d-2912-440e-8cc5-e1d22f16abb7",
+      "stationid": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
+    },
+    {
+      "timeStamp": "2023-09-07T21:41:18.914Z",
+      "code": 300,
+      "temp": 23,
+      "windSpeed": 12,
+      "windDirection": 45,
+      "pressure": 50,
+      "_id": "933f2d82-1102-4798-bdde-1594ea364c87",
+      "stationid": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
+    },
+    {
+      "timeStamp": "2023-09-07T21:42:36.221Z",
+      "code": 200,
+      "temp": 15,
+      "windSpeed": 14,
+      "windDirection": 12,
+      "pressure": 12,
+      "_id": "721d38f8-2a92-4a9a-ac35-3257db42410d",
+      "stationid": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
+    },
+    {
+      "timeStamp": "07/09/2023, 22:48:33",
+      "code": 400,
+      "temp": 11,
+      "windSpeed": 11,
+      "windDirection": 11,
+      "pressure": 11,
+      "_id": "a1f5cdb5-c3f6-4c91-b8ca-a84354c73afa",
+      "stationid": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
     }
   ]
 }

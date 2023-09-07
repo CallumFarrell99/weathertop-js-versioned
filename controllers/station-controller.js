@@ -16,7 +16,10 @@ export const stationController = {
 
     async addReading(request, response) {
         const station = await stationStore.getStationById(request.params.id);
+        const date = new Date();
+        let dateString = date.toLocaleString('en-GB');
         const newReading = {
+            timeStamp: String(dateString),
             code: Number(request.body.code),
             temp: Number(request.body.temp),
             windSpeed: Number(request.body.windSpeed),
