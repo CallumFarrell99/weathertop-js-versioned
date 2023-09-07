@@ -18,6 +18,20 @@
       "latitude": 20,
       "longitude": 55,
       "_id": "0d7eb40e-6a75-4646-9322-47dd0f58f2ed"
+    },
+    {
+      "name": "Feakle",
+      "latitude": 45,
+      "longitude": 100,
+      "userid": "afc0f1ef-0f20-401f-b5a3-6d06a66d45ac",
+      "_id": "d198568d-1a66-4e4d-85de-92832d710a80"
+    },
+    {
+      "name": "Shannon",
+      "latitude": -70,
+      "longitude": 45,
+      "userid": "43512ac0-3d1d-4eb5-9512-eb0013a5e766",
+      "_id": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
     }
   ]
 }

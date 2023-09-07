@@ -1,0 +1,19 @@
+{
+  "file": "./models/users.json",
+  "users": [
+    {
+      "firstName": "Callum",
+      "lastName": "Farrell",
+      "email": "admin@gmail.com",
+      "password": "secret",
+      "_id": "afc0f1ef-0f20-401f-b5a3-6d06a66d45ac"
+    },
+    {
+      "firstName": "Admin",
+      "lastName": "Test",
+      "email": "admintest@gmail.com",
+      "password": "secret",
+      "_id": "43512ac0-3d1d-4eb5-9512-eb0013a5e766"
+    }
+  ]
+}

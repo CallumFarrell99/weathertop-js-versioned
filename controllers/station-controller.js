@@ -27,4 +27,6 @@ export const stationController = {
         await readingStore.addReading(station._id, newReading);
         response.redirect("/station/" + station._id);
     },
+
+
 };
