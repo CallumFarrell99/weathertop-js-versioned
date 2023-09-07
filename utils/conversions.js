@@ -65,23 +65,23 @@ export const conversions = {
         let conditionsIcon = null;
 
         if (code == 100) {
-        conditionsIcon = "";
+        conditionsIcon = "fas fa-solid fa-sun fa-2xl";
         } else if (code == 200) {
-        conditionsIcon = "";
+        conditionsIcon = "fas fa-solid fa-cloud-sun fa-2xl";
         } else if (code == 300) {
-        conditionsIcon = "";
+        conditionsIcon = "fas fa-solid fa-cloud fa-2xl";
         } else if (code == 400) {
-        conditionsIcon = "";
+        conditionsIcon = "fas fa-solid fa-cloud-showers-water fa-2xl";
         } else if (code == 500) {
-        conditionsIcon = "";
+        conditionsIcon = "fas fa-solid fa-cloud-showers-heavy fa-2xl";
         } else if (code == 600) {
-        conditionsIcon = "";
+        conditionsIcon = "fas fa-solid fa-cloud-rain fa-2xl";
         } else if (code == 700) {
-        conditionsIcon = "";
+        conditionsIcon = "fas fa-solid fa-snowflake fa-2xl";
         } else if (code == 800) {
-        conditionsIcon = "";
+        conditionsIcon = "fas fa-solid fa-cloud-bolt fa-2xl";
         } else {
-        conditionsIcon = "";
+        conditionsIcon = "fas fa-solid fa-bug fa-2xl";
         }
         return conditionsIcon;
     },
