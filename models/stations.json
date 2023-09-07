@@ -12,6 +12,12 @@
     {
       "name": "Tulla",
       "_id": "bf032241-6681-457b-ac24-3a6567f9279e"
+    },
+    {
+      "name": "Dingle",
+      "latitude": 20,
+      "longitude": 55,
+      "_id": "0d7eb40e-6a75-4646-9322-47dd0f58f2ed"
     }
   ]
 }
