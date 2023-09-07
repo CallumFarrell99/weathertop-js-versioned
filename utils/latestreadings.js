@@ -31,7 +31,7 @@ export const latestReadings= async (id) => {
         reading.minTemp = conversions.calculateMin(reading.latestTemp);
         reading.maxTemp = conversions.calculateMax(reading.latestTemp);
         reading.latestWindSpeed = stationReadings[latestReading].windSpeed;
-        reading.latestWindSpeedBft = conversions.windSpeedToBeaufort(reading.latestWindSpeedBft);
+        reading.latestWindSpeedBft = conversions.windSpeedToBeaufort(reading.latestWindSpeed);
         reading.minWindSpeed = conversions.calculateMin(reading.latestWindSpeed);
         reading.maxWindSpeed = conversions.calculateMax(reading.latestWindSpeed);
         reading.latestWindDirection = stationReadings[latestReading].windDirection;
