@@ -7,7 +7,7 @@ const db = initStore("stations");
 export const stationStore = {
   async getAllStations() {
     await db.read();
-    return db.data.stations;
+    return db.data.stations.sort((a, b) => (a.name > b.name ? 1 : -1));
   },
 
   async addStation(station) {
@@ -39,6 +39,7 @@ export const stationStore = {
 
   async getStationsByUserId(userid) {
     await db.read();
-    return db.data.stations.filter((station) => station.userid === userid);
+    let alphStations = db.data.stations.filter((station) => station.userid === userid);
+    return alphStations.sort((a, b) => (a.name > b.name ? 1 : -1));
   },
 };

@@ -32,6 +32,20 @@
       "longitude": 45,
       "userid": "43512ac0-3d1d-4eb5-9512-eb0013a5e766",
       "_id": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
+    },
+    {
+      "name": "Thurles",
+      "latitude": 79,
+      "longitude": 100,
+      "userid": "43512ac0-3d1d-4eb5-9512-eb0013a5e766",
+      "_id": "f17f79f6-1691-4109-92a5-a9ee330639e5"
+    },
+    {
+      "name": "Athenry",
+      "latitude": 22,
+      "longitude": 22,
+      "userid": "43512ac0-3d1d-4eb5-9512-eb0013a5e766",
+      "_id": "29aa2ec9-81dc-42b5-93e3-03e09f52df0b"
     }
   ]
 }
