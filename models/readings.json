@@ -111,6 +111,16 @@
       "pressure": 11,
       "_id": "a1f5cdb5-c3f6-4c91-b8ca-a84354c73afa",
       "stationid": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
+    },
+    {
+      "timeStamp": "07/09/2023, 23:25:22",
+      "code": 100,
+      "temp": 11,
+      "windSpeed": 11,
+      "windDirection": 11,
+      "pressure": 11,
+      "_id": "23c6aae9-aa99-4648-b524-56f92134eaf3",
+      "stationid": "7a5c79d2-03ff-49c2-b096-002743ea3bb6"
     }
   ]
 }

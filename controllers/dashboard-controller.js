@@ -1,5 +1,6 @@
 import { stationStore } from "../models/station-store.js";
 import { accountsController } from "./accounts-controller.js";
+import { latestReadings } from "../utils/latestreadings.js";
 
 export const dashboardController = {
   async index(request, response) {
@@ -8,6 +9,10 @@ export const dashboardController = {
       title: "Station Dashboard",
       station: await stationStore.getStationsByUserId(loggedInUser._id),
     };
+    for (const station of viewData.station) {
+      const lastReading = await latestReadings(station._id);
+      Object.assign(station, lastReading.reading);
+    }
     console.log("dashboard rendering");
     response.render("dashboard-view", viewData);
   },

@@ -1,10 +1,38 @@
 {{#each station}}
-<div class="box box-link-hover-shadow">
-    <h2 class="title">
-        {{ name }}
-    </h2>
-    <a href="/station/{{_id}}" class="button">
-        {{>icons/open}}
-    </a>
-</div>
+<div class="column is-half">
+    <div class="content box">
+      <div class="columns is-multiline">
+        <div class="column is-full">
+          <div class="content box notification is-dark">
+            <div class="columns">
+              <div class="column">
+                <h1 class="title">
+                  {{name}}
+                </h1>
+                <p>Lng: {{longitude}}</p>
+                <p>Lat: {{latitude}}</p>
+              </div>
+              <div class="column">
+                  <span class="icon is-large">
+                    <i class="fas fa-regular fa-location-dot fa-2xl"></i>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-full">
+            {{> latest-reading}}
+        </div>
+        </div>
+        <div class="column is-full">
+              <a href="/station/{{_id}}" class="icon has-text-info">
+            <i class="fas fa-folder"></i>
+            <a href="" class="icon has-text-danger">
+              <i class="fas fa-trash"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {{/each}}
