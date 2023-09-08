@@ -1,39 +1,38 @@
 {{#each station}}
-    <div class="content box">
+<div class="content box">
 
-      <div class="columns is-multiline">
-        <div class="column is-full">
-          <div class="content box notification is-dark">
-            <div class="columns">
-              <div class="column">
-                <h1 class="title">
-                  {{name}}
-                </h1>
-                <p>Lng: {{longitude}}</p>
-                <p>Lat: {{latitude}}</p>
-              </div>
-              <div class="column">
-                  <span class="icon is-large">
-                    <i class="fas fa-regular fa-location-dot fa-2xl"></i>
-                  </span>
-              </div>
-            </div>
+  <div class="columns is-multiline">
+    <div class="column is-full">
+      <div class="content box notification is-dark">
+        <div class="columns">
+          <div class="column">
+            <h1 class="title">
+              {{name}}
+            </h1>
+            <p>Lng: {{longitude}}</p>
+            <p>Lat: {{latitude}}</p>
+          </div>
+          <div class="column">
+            <span class="icon is-large">
+              <i class="fas fa-regular fa-location-dot fa-2xl"></i>
+            </span>
           </div>
         </div>
-        <div class="column is-full">
-            {{> latest-reading}}
-        </div>
-        </div>
-        <div class="column is-full">
-              <a href="/station/{{_id}}" class="icon has-text-info">
-            <i class="fas fa-folder fa-2xl"></i>
-            <div class="column is-12"></div>
-            <a href="/dashboard/deletestation/{{_id}}" class="icon has-text-danger">
-              <i class="fas fa-trash fa-2xl"></i>
-            </a>
-        </div>
       </div>
-    {{/each}}
-
     </div>
+    <div class="column is-full">
+      {{> latest-reading}}
+    </div>
+  </div>
+  <div class="column is-full">
+    <a href="/station/{{_id}}" class="icon has-text-info">
+      <i class="fas fa-folder fa-2xl"></i>
+      <div class="column is-12"></div>
+      <a href="/dashboard/deletestation/{{_id}}" class="icon has-text-danger">
+        <i class="fas fa-trash fa-2xl"></i>
+      </a>
+  </div>
+</div>
+{{/each}}
 
+</div>

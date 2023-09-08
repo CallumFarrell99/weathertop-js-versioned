@@ -1,7 +1,7 @@
 import { readingStore } from "../models/reading-store.js";
 import { conversions } from "../utils/conversions.js";
 
-export const latestReadings= async (id) => {
+export const latestReadings = async (id) => {
     let stationReadings = await readingStore.getReadingsByStationId(id);
     let latestReading = null;
     const reading = {

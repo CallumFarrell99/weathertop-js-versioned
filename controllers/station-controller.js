@@ -31,7 +31,7 @@ export const stationController = {
         response.redirect("/station/" + station._id);
     },
 
-    async deleteReading(request,response) {
+    async deleteReading(request, response) {
         const stationId = request.params.stationid;
         const readingId = request.params.readingid;
         console.log(`Deleting reading ${readingId} from Station ${stationId}`);
