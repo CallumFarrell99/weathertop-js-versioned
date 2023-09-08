@@ -14,6 +14,13 @@
       "email": "admintest@gmail.com",
       "password": "secret",
       "_id": "43512ac0-3d1d-4eb5-9512-eb0013a5e766"
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Collins",
+      "email": "Tom@gmail.com",
+      "password": "secret",
+      "_id": "60be172b-2ac6-4389-8a41-1a31285e47c1"
     }
   ]
 }

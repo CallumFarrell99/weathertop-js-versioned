@@ -16,6 +16,7 @@ export const latestReadings= async (id) => {
         minWindSpeed: null,
         maxWindSpeed: null,
         latestWindDirection: null,
+        compassDirection: null,
         windChill: null,
         latestPressure: null,
         minPressure: null,
@@ -35,6 +36,7 @@ export const latestReadings= async (id) => {
         reading.minWindSpeed = conversions.calculateMin(reading.latestWindSpeed);
         reading.maxWindSpeed = conversions.calculateMax(reading.latestWindSpeed);
         reading.latestWindDirection = stationReadings[latestReading].windDirection;
+        reading.compassDirection = conversions.compassDirection(reading.latestWindDirection);
         reading.windChill = conversions.windChill(reading.latestWindSpeed, reading.latestTemp);
         reading.latestPressure = stationReadings[latestReading].pressure;
         reading.minPressure = conversions.calculateMin(reading.latestPressure);
